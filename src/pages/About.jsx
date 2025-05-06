@@ -89,12 +89,12 @@ function About() {
   return (
     <div>
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-semibold text-gray-900">About</h1>
+        <h1 className="text-2xl font-semibold text-gray-900">Haqida</h1>
         <button
           onClick={() => setIsEditing(!isEditing)}
           className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors"
         >
-          {isEditing ? "Cancel" : about ? "Edit" : "Create"}
+          {isEditing ? "Bekor qilish" : about ? "Tahrirlash" : "Yaratish"}
         </button>
       </div>
 
@@ -108,7 +108,7 @@ function About() {
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="title"
             >
-              Title
+              Sarlavha
             </label>
             <input
               type="text"
@@ -126,7 +126,7 @@ function About() {
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="body"
             >
-              Body
+              Matn
             </label>
             <textarea
               id="body"
@@ -144,7 +144,7 @@ function About() {
               type="submit"
               className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors"
             >
-              Save
+              Saqlash
             </button>
           </div>
         </form>
@@ -160,7 +160,7 @@ function About() {
       ) : (
         <div className="bg-white shadow-md rounded-lg p-6 text-center">
           <p className="text-gray-500">
-            No about information found. Click 'Create' to add one.
+            Ma'lumot topilmadi. "Yaratish" tugmasini bosing.
           </p>
         </div>
       )}

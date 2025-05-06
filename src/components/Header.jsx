@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Menu, Bell, User } from "lucide-react"
+import { Menu, Bell, User } from "lucide-react";
 
 function Header({ sidebarOpen, setSidebarOpen }) {
   return (
@@ -28,7 +28,9 @@ function Header({ sidebarOpen, setSidebarOpen }) {
                   <div className="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center">
                     <User className="h-5 w-5 text-gray-500" />
                   </div>
-                  <span className="ml-2 text-gray-700 hidden md:block">Admin User</span>
+                  <span className="ml-2 text-gray-700 hidden md:block">
+                    Admin
+                  </span>
                 </button>
               </div>
             </div>
@@ -36,7 +38,7 @@ function Header({ sidebarOpen, setSidebarOpen }) {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

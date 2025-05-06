@@ -64,35 +64,35 @@ function Dashboard() {
 
   const statCards = [
     {
-      title: "About",
+      title: "Haqida",
       count: stats.about,
       icon: <Info className="h-8 w-8 text-blue-500" />,
       link: "/about",
       color: "bg-blue-100",
     },
     {
-      title: "Social Links",
+      title: "Ijtimoiy havolalar",
       count: stats.social,
       icon: <Share2 className="h-8 w-8 text-purple-500" />,
       link: "/social",
       color: "bg-purple-100",
     },
     {
-      title: "Location",
+      title: "Manzil",
       count: stats.location,
       icon: <MapPin className="h-8 w-8 text-red-500" />,
       link: "/location",
       color: "bg-red-100",
     },
     {
-      title: "Passing Scores",
+      title: "O‘tish ballari",
       count: stats.passingScores,
       icon: <BookOpen className="h-8 w-8 text-green-500" />,
       link: "/passing-scores",
       color: "bg-green-100",
     },
     {
-      title: "Achievements",
+      title: "Yutuqlar",
       count: stats.achievements,
       icon: <Award className="h-8 w-8 text-yellow-500" />,
       link: "/achievement",
@@ -102,7 +102,9 @@ function Dashboard() {
 
   return (
     <div>
-      <h1 className="text-2xl font-semibold text-gray-900 mb-6">Dashboard</h1>
+      <h1 className="text-2xl font-semibold text-gray-900 mb-6">
+        Boshqaruv paneli
+      </h1>
 
       {loading ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

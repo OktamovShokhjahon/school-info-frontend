@@ -158,13 +158,13 @@ function Achievement() {
   return (
     <div>
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-semibold text-gray-900">Achievements</h1>
+        <h1 className="text-2xl font-semibold text-gray-900">Yutuqlar</h1>
         <button
           onClick={() => openModal()}
           className="flex items-center px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors"
         >
           <Plus className="h-5 w-5 mr-1" />
-          Add New
+          Yangi qo‘shish
         </button>
       </div>
 
@@ -229,7 +229,7 @@ function Achievement() {
       ) : (
         <div className="bg-white shadow-md rounded-lg p-6 text-center">
           <p className="text-gray-500">
-            No achievements found. Click 'Add New' to create one.
+            Yutuqlar topilmadi. "Yangi qo‘shish" tugmasini bosing.
           </p>
         </div>
       )}
@@ -250,8 +250,8 @@ function Achievement() {
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <h3 className="text-lg font-medium text-gray-900 mb-4">
                     {currentAchievement
-                      ? "Edit Achievement"
-                      : "Add Achievement"}
+                      ? "Yutuqni tahrirlash"
+                      : "Yutuq qo‘shish"}
                   </h3>
 
                   <div className="mb-4">
@@ -259,7 +259,7 @@ function Achievement() {
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="title"
                     >
-                      Title
+                      Sarlavha
                     </label>
                     <input
                       type="text"
@@ -277,7 +277,7 @@ function Achievement() {
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="description"
                     >
-                      Description
+                      Tavsif
                     </label>
                     <textarea
                       id="description"
@@ -295,7 +295,7 @@ function Achievement() {
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="image"
                     >
-                      Image
+                      Rasm
                     </label>
                     <input
                       type="file"
@@ -322,7 +322,7 @@ function Achievement() {
                     type="submit"
                     className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-teal-600 text-base font-medium text-white hover:bg-teal-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm"
                   >
-                    {currentAchievement ? "Update" : "Add"}
+                    {currentAchievement ? "Yangilash" : "Qo‘shish"}
                   </button>
                   <button
                     type="button"

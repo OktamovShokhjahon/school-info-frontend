@@ -50,7 +50,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             end
           >
             <Home className="mr-3 h-5 w-5" />
-            Dashboard
+            Boshqaruv paneli
           </NavLink>
 
           <NavLink
@@ -64,7 +64,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             }
           >
             <Info className="mr-3 h-5 w-5" />
-            About
+            Haqida
           </NavLink>
 
           <NavLink
@@ -78,7 +78,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             }
           >
             <Share2 className="mr-3 h-5 w-5" />
-            Social
+            Ijtimoiy
           </NavLink>
 
           <NavLink
@@ -92,7 +92,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             }
           >
             <MapPin className="mr-3 h-5 w-5" />
-            Location
+            Manzil
           </NavLink>
 
           <NavLink
@@ -106,7 +106,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             }
           >
             <BookOpen className="mr-3 h-5 w-5" />
-            Passing Scores
+            O‘tish ballari
           </NavLink>
 
           <NavLink
@@ -120,7 +120,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             }
           >
             <Award className="mr-3 h-5 w-5" />
-            Achievement
+            Yutuqlar
           </NavLink>
         </nav>
       </aside>

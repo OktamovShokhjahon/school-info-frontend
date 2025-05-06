@@ -87,12 +87,12 @@ function Location() {
   return (
     <div>
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-semibold text-gray-900">Location</h1>
+        <h1 className="text-2xl font-semibold text-gray-900">Manzil</h1>
         <button
           onClick={() => setIsEditing(!isEditing)}
           className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors"
         >
-          {isEditing ? "Cancel" : location ? "Edit" : "Create"}
+          {isEditing ? "Bekor qilish" : location ? "Tahrirlash" : "Yaratish"}
         </button>
       </div>
 
@@ -106,7 +106,7 @@ function Location() {
               className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="location"
             >
-              Location URL
+              Manzil URL
             </label>
             <input
               type="text"
@@ -115,7 +115,7 @@ function Location() {
               value={formData.location}
               onChange={handleInputChange}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Enter Google Maps URL"
+              placeholder="Google Maps URL-ni kiriting"
               required
             />
           </div>
@@ -131,7 +131,7 @@ function Location() {
         </form>
       ) : location.locations && location ? (
         <div className="bg-white shadow-md rounded-lg p-6">
-          <h2 className="text-lg font-semibold mb-4">Location Map</h2>
+          <h2 className="text-lg font-semibold mb-4">Manzil xaritasi</h2>
           <div className="mb-4">
             <a
               href={location.location}
@@ -146,7 +146,7 @@ function Location() {
       ) : (
         <div className="bg-white shadow-md rounded-lg p-6 text-center">
           <p className="text-gray-500">
-            No location information found. Click 'Create' to add one.
+            Manzil haqida ma'lumot topilmadi. "Yaratish" tugmasini bosing.
           </p>
         </div>
       )}

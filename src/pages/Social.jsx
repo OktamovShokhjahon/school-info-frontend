@@ -129,13 +129,15 @@ function Social() {
   return (
     <div>
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-semibold text-gray-900">Social Links</h1>
+        <h1 className="text-2xl font-semibold text-gray-900">
+          Ijtimoiy Havolalar
+        </h1>
         <button
           onClick={() => openModal()}
           className="flex items-center px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors"
         >
           <Plus className="h-5 w-5 mr-1" />
-          Add New
+          Yangi qo‘shish
         </button>
       </div>
 
@@ -154,13 +156,13 @@ function Social() {
             <thead className="bg-gray-50">
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Name
+                  Nomi
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Link
+                  Havola
                 </th>
                 <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Actions
+                  Amal
                 </th>
               </tr>
             </thead>
@@ -204,7 +206,7 @@ function Social() {
       ) : (
         <div className="bg-white shadow-md rounded-lg p-6 text-center">
           <p className="text-gray-500">
-            No social links found. Click 'Add New' to create one.
+            Ijtimoiy havolalar topilmadi. "Yangi qo‘shish" tugmasini bosing.
           </p>
         </div>
       )}
@@ -224,7 +226,9 @@ function Social() {
               <form onSubmit={handleSubmit}>
                 <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <h3 className="text-lg font-medium text-gray-900 mb-4">
-                    {currentSocial ? "Edit Social Link" : "Add Social Link"}
+                    {currentSocial
+                      ? "Ijtimoiy havolani tahrirlash"
+                      : "Ijtimoiy havola qo‘shish"}
                   </h3>
 
                   <div className="mb-4">
@@ -232,7 +236,7 @@ function Social() {
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="name"
                     >
-                      Name
+                      Nomi
                     </label>
                     <input
                       type="text"
@@ -250,7 +254,7 @@ function Social() {
                       className="block text-gray-700 text-sm font-bold mb-2"
                       htmlFor="link"
                     >
-                      Link
+                      Havola
                     </label>
                     <input
                       type="url"
